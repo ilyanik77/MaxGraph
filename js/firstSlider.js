@@ -20,7 +20,6 @@ function showNextSlide() {
   	updateSlider();
   
 }
-
 function updateSlider() {
   	slides.forEach((slide, index) => {
     	if (index === slideIndex) {
