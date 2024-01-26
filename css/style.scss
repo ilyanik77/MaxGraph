@@ -1,3 +1,5 @@
+@import "../libs/swiper.min.css";
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -498,44 +500,51 @@ input[type="search"]::-webkit-search-results-decoration {
 
     &__slider {
 
-        &__box {
-	        //overflow: hidden;
-            position: relative;
-	        display: flex;
-	        border-radius: 8px;
+        & .swiper-container{
+            
             min-height: 550px;
-            gap: 32px;
-	        //width: 890px;
-	        //transition: transform 0.3s;
-	        //background-position: center;
-	        //background-repeat: no-repeat;
-	        //background-size: cover;
-	        //flex-direction: column;
-	        //justify-content: flex-end;
+            width: 890px;
 
-            &__item {
-                //transition: transform 0.3s;
-	            background-position: center;
-	            background-repeat: no-repeat;
-	            background-size: cover;
-                width: 890px;
-                height: 551px;
-                display: flex;
-                align-items: flex-end;
-                
+            & .swiper-wrapper {
+                align-items: center;
 
-                & h3 {
-                    color: #FFF;
-                    font-family: SFProDisplay;
-                    font-size: 32px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 40px;
-                    margin-bottom: 40px;
-                    margin-left: 40px;
+                & .swiper-slide {
+                    display: flex;
+                    align-items: flex-end;
+                    border-radius: 8px;
+                    width: 890px;
+                    height: 551px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    &-active {
+                        height: 750px;
+                    }
+                    
+                    & h3 {
+                        color: #FFF;
+                        font-family: SFProDisplay;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 40px;
+                        margin-bottom: 40px;
+                        margin-left: 40px;
+                    }
                 }
             }
         }
+
+        // &__box {
+
+        //     position: relative;
+	    //     display: flex;
+	    //     border-radius: 8px;
+        //     min-height: 550px;
+        //     gap: 32px;
+
+        
     }
 }
 
