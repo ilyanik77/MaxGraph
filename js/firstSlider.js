@@ -1,3 +1,4 @@
+
 const slider = document.querySelector(".first__content__bottom__slider-box");
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
@@ -19,7 +20,6 @@ function showNextSlide() {
   	updateSlider();
   
 }
-
 function updateSlider() {
   	slides.forEach((slide, index) => {
     	if (index === slideIndex) {
