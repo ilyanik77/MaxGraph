@@ -1,4 +1,4 @@
-@import "../libs/swiper.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-results-button,
@@ -14,41 +14,6 @@ input[type=search]::-webkit-search-results-decoration {
   max-width: 1626px;
   padding: 0 30px;
   margin: 0 auto;
-}
-
-.search-form__field {
-  border: none;
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  color: var(--dark-color);
-  padding-left: 55px;
-  padding-right: 90px;
-}
-
-.search-form__button {
-  width: 18px;
-  height: 18px;
-  background-image: url("../img/search.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 62px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.item1 {
-  background: url("../img/video1.jpg");
-}
-
-.item2 {
-  background: url("../img/video2.jpg");
-}
-
-.item3 {
-  background: url("../img/video3.jpg");
 }
 
 .menu {
@@ -144,8 +109,8 @@ input[type=search]::-webkit-search-results-decoration {
   margin-bottom: 40px;
   text-decoration: none;
   text-align: center;
-  color: #FFF;
-  font-family: SFProDisplay;
+  color: #fff;
+  font-family: Montserrat;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
@@ -153,10 +118,10 @@ input[type=search]::-webkit-search-results-decoration {
   letter-spacing: 2px;
 }
 .first__content__title {
-  width: 35%;
+  width: 50%;
   margin-bottom: 40px;
   color: #FFF;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -166,7 +131,7 @@ input[type=search]::-webkit-search-results-decoration {
   width: 33%;
   margin-bottom: 40px;
   color: #FFF;
-  font-family: SFCompactText;
+  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -181,8 +146,8 @@ input[type=search]::-webkit-search-results-decoration {
   border-radius: 8px;
   background-color: #E8594E;
   padding: 33px 80px;
-  color: #FFF;
-  font-family: SFProDisplay;
+  color: #fff;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -234,7 +199,7 @@ input[type=search]::-webkit-search-results-decoration {
 .first__content__bottom__slider-text p {
   color: #FFF;
   text-align: center;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -243,12 +208,41 @@ input[type=search]::-webkit-search-results-decoration {
   text-transform: uppercase;
 }
 
+.search-form__field {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  color: #1C2E3D;
+  padding-left: 55px;
+  padding-right: 90px;
+  color: #1C2E3D;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.search-form__button {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/search.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 62px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .become__content__title {
-  width: 45%;
+  width: 60%;
   margin-top: 150px;
   margin-bottom: 96px;
   color: #1C2E3D;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -312,9 +306,9 @@ input[type=search]::-webkit-search-results-decoration {
   background-color: #E8594E;
   border-radius: 24px;
   margin-bottom: 16px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
@@ -325,7 +319,7 @@ input[type=search]::-webkit-search-results-decoration {
   width: 65%;
   margin-bottom: 16px;
   color: #FFF;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -335,7 +329,7 @@ input[type=search]::-webkit-search-results-decoration {
   width: 65%;
   margin-bottom: 40px;
   color: #FFF;
-  font-family: SFCompactText;
+  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -345,9 +339,9 @@ input[type=search]::-webkit-search-results-decoration {
   padding: 33px 79px;
   background: #73AFBA;
   border-radius: 8px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -384,18 +378,24 @@ input[type=search]::-webkit-search-results-decoration {
   margin-top: 35px;
   margin-bottom: 32px;
 }
-.feature__stories__list__item p {
+.feature__stories__list__item__img {
+  margin-right: 32px;
+}
+.feature__stories__list__item__img img {
+  max-width: 45px;
+}
+.feature__stories__list__item__text p {
   color: #FFF;
-  font-family: SFProDisplay;
+  font-family: Roboto;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 24px;
   margin-bottom: 8px;
 }
-.feature__stories__list__item time {
+.feature__stories__list__item__text time {
   color: rgba(255, 255, 255, 0.5);
-  font-family: SFProText;
+  font-family: Roboto;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
@@ -419,7 +419,7 @@ input[type=search]::-webkit-search-results-decoration {
 .videos__content__title {
   color: #1C2E3D;
   text-align: center;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -430,7 +430,7 @@ input[type=search]::-webkit-search-results-decoration {
   width: 634px;
   color: #788692;
   text-align: center;
-  font-family: SFCompactText;
+  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -467,6 +467,18 @@ input[type=search]::-webkit-search-results-decoration {
   margin-left: 40px;
 }
 
+.item1 {
+  background: url("../img/video1.jpg");
+}
+
+.item2 {
+  background: url("../img/video2.jpg");
+}
+
+.item3 {
+  background: url("../img/video3.jpg");
+}
+
 .newsletter {
   height: 798px;
   margin-bottom: 246px;
@@ -483,12 +495,12 @@ input[type=search]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 .newsletter__content__text {
-  width: 368px;
+  width: 400px;
   margin-left: 135px;
 }
 .newsletter__content__text__title {
   color: #FFF;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -497,7 +509,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .newsletter__content__text p {
   color: #FFF;
-  font-family: SFCompactText;
+  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -522,7 +534,7 @@ input[type=search]::-webkit-search-results-decoration {
   border-bottom: 1px solid rgba(28, 46, 61, 0.3);
   padding: 32px 0 24px 0;
   color: #1C2E3D;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
@@ -535,9 +547,9 @@ input[type=search]::-webkit-search-results-decoration {
   margin-top: 66px;
   background-color: #73AFBA;
   border-radius: 0px 0px 8px 8px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -556,7 +568,7 @@ input[type=search]::-webkit-search-results-decoration {
 .inspirate__content__title {
   color: #1C2E3D;
   text-align: center;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -567,7 +579,7 @@ input[type=search]::-webkit-search-results-decoration {
   width: 634px;
   color: #788692;
   text-align: center;
-  font-family: SFCompactText;
+  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -608,7 +620,7 @@ input[type=search]::-webkit-search-results-decoration {
   text-decoration: none;
   text-align: center;
   color: #FFF;
-  font-family: SFProDisplay;
+  font-family: Roboto;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
@@ -620,7 +632,7 @@ input[type=search]::-webkit-search-results-decoration {
 .inspirate__blog__item__title {
   margin-bottom: 30px;
   color: #FFF;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -629,7 +641,7 @@ input[type=search]::-webkit-search-results-decoration {
 .inspirate__blog__item a {
   margin-bottom: 8px;
   color: #FFF;
-  font-family: SFProDisplay;
+  font-family: Roboto;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -706,7 +718,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .footer__content__column__title {
   color: #100E0B;
-  font-family: HelveticaNeue;
+  font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -717,17 +729,9 @@ input[type=search]::-webkit-search-results-decoration {
 .footer__content__column img {
   padding: 32px 0;
 }
-.footer__content__column__list {
-  color: #959EA6;
-  font-family: SFProDisplay;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 29px;
-}
 .footer__content__column__list__item {
   color: #959EA6;
-  font-family: SFProDisplay;
+  font-family: Roboto;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -742,15 +746,22 @@ input[type=search]::-webkit-search-results-decoration {
   border-radius: 8px;
   padding: 23px 0 31px 22px;
   margin-bottom: 16px;
+  color: #1C2E3D;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.2px;
 }
 .footer__content__column-form button {
   border: 1px solid #d9d9d9;
   border-radius: 8px;
   padding: 25px 0;
   background-color: #73AFBA;
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: SFProDisplay;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -766,7 +777,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .footer__bottom__text {
   color: #959EA6;
-  font-family: SFProText;
+  font-family: Roboto;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -779,7 +790,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .footer__bottom__links a {
   color: #959EA6;
-  font-family: SFProText;
+  font-family: Roboto;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;

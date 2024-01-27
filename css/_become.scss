@@ -1,0 +1,54 @@
+.become {
+
+    &__content {
+
+        &__title {
+            width: 60%;
+            margin-top: 150px;
+            margin-bottom: 96px;
+            color: $H2ColorText;
+            font-family: $fontFamilyH2;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 80px;
+        }
+
+        &__box {
+            display: flex;
+            gap: 33px;
+            margin-bottom: 150px;
+
+            &__item {
+                position: relative;
+
+                &__text {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: #73AFBA;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity .2s, visibility .2s;
+                    padding-left: 54px;
+                    padding-bottom: 64px;
+                    color: #FFF;
+                    font-family: SFProDisplay;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 31px;
+                    display: flex;
+                    align-items: flex-end;
+                }
+            }
+
+            &__item:hover .become__content__box__item__text {
+                visibility: visible;
+                opacity: 0.9;
+            }
+        }
+    }
+}

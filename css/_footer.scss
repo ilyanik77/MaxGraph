@@ -1,0 +1,79 @@
+.footer {
+    border: 1px solid #d9d9d9;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 150px;
+        margin-bottom: 121px;
+        gap: 10px;
+
+        &__column {
+
+            &__title {
+                color: #100E0B;
+                font-family: $fontFamilyLink;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2.15px;
+                text-transform: uppercase;
+                        
+            }
+
+            & img {
+                padding: 32px 0;
+            }
+
+            &__list {
+
+                &__item {
+                    color: #959EA6;
+                    font-family: $fontFamilyLink;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 29px;
+                }
+            }
+
+            &-form {
+                display: flex;
+                flex-direction: column;
+
+                & input {
+                    border: 1px solid #d9d9d9;
+                    border-radius: 8px;
+                    padding: 23px 0 31px 22px;
+                    margin-bottom: 16px;
+                    color: $inputColorText;
+                    font-family: $fontFamilyInput;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: -0.2px;
+                    
+                }
+
+                & button {
+                    border: 1px solid #d9d9d9;
+                    border-radius: 8px;
+                    padding: 25px 0;
+                    background-color: #73AFBA;
+                    color: $btnColorText;
+                    text-align: center;
+                    font-family: $fontFamilyButton;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 2.182px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+}

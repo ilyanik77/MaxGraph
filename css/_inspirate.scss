@@ -1,0 +1,152 @@
+.inspirate {
+    margin-bottom: 140px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            color: $H2ColorText;
+            text-align: center;
+            font-family: $fontFamilyH2;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 80px;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            width: 634px;
+            color: #788692;
+            text-align: center;
+            font-family: $fontFamilyText;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 24px;
+            margin-bottom: 69px;
+        }
+    }
+
+    &__blog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        width: 100%;
+        height: 1774px;
+
+        &__item {
+            border-radius: 8px;
+            position: relative;
+            padding-left: 40px;
+            padding-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            &__play {
+                position: absolute;
+                background-image: url("../img/frame.svg");
+                background-repeat: no-repeat;
+                width: 68px;
+                height: 68px;
+                top: 40px;
+            }
+
+            &__link {
+                position: absolute;
+                background-color: rgb(28, 46, 61, 0.4);
+                width: 142px;
+                padding: 18px 30px;
+                border-radius: 24px;
+                margin-bottom: 40px;
+                text-decoration: none;
+                text-align: center;
+                color: #FFF;
+                font-family: $fontFamilyLink;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 2px;
+                right: 40px;
+                top: 40px;
+            }
+
+            &__title {
+                margin-bottom: 30px;
+                color: #FFF;
+                font-family: $fontFamilyH3;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px; 
+            }
+
+            & a {
+                margin-bottom: 8px;
+                color: #FFF;
+                font-family: $fontFamilyLink;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.1px;
+                text-transform: uppercase; 
+            }
+
+            &__people {
+                display: flex;
+            }
+        }
+
+    }
+}
+
+.blog1 {
+    background-image: url("../img/blog1.png");
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+.blog2 {
+    background-image: url("../img/blog2.png");
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+.blog3 {
+    background-image: url("../img/blog3.png");
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+.blog4 {
+    background-image: url("../img/blog4.png");
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+.blog5 {
+    background-image: url("../img/blog5.png");
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+.blog6 {
+    background-image: url("../img/blog6.png");
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+.blog7 {
+    background-image: url("../img/blog7.png");
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+.big {
+    grid-column: span 2;
+}

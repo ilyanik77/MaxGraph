@@ -1,0 +1,40 @@
+.header {
+    position: absolute;
+	width: 100%;
+	z-index: 100;
+
+    &__content {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 55px;
+	    padding-bottom: 55px;
+
+        &__social {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+
+            &__item:not(:last-child) {
+                margin-right: 50px;
+            }
+        }
+
+        &__logo {
+            color: #FFF;
+            text-align: center;
+            font-family: SFProDisplay;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+        }
+
+        &__burger {
+            padding: 15px;
+            background: transparent;
+        }
+    }
+}

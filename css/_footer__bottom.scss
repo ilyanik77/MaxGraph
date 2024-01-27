@@ -1,0 +1,29 @@
+.footer__bottom { 
+	padding: 30px ;
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+        color: #959EA6;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        & a {
+            color: #959EA6;
+            font-family: Roboto;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

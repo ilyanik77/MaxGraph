@@ -1,0 +1,91 @@
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 141px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 149px;
+        margin-bottom: 81px;
+        width: 767px;
+
+        &__title {
+            color: $H2ColorText;
+            text-align: center;
+            font-family: $fontFamilyH2;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 80px;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            
+            width: 634px;
+            color: #788692;
+            text-align: center;
+            font-family: $fontFamilyText;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 24px;
+        }
+    }
+
+    &__slider {
+
+        & .swiper-container{
+            
+            min-height: 550px;
+            width: 890px;
+
+            & .swiper-wrapper {
+                align-items: center;
+
+                & .swiper-slide {
+                    display: flex;
+                    align-items: flex-end;
+                    border-radius: 8px;
+                    width: 890px;
+                    height: 551px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    &-active {
+                        height: 750px;
+                    }
+                    
+                    & h3 {
+                        color: #FFF;
+                        font-family: SFProDisplay;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 40px;
+                        margin-bottom: 40px;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+.item1 {
+    background: url("../img/video1.jpg");
+}
+
+.item2 {
+    background: url("../img/video2.jpg");
+}
+
+.item3 {
+    background: url("../img/video3.jpg");
+}
