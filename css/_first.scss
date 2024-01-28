@@ -42,7 +42,7 @@
 
         &__text {
             width: 33%;
-            margin-bottom: 40px;
+            margin-bottom: 15px;
             color: #FFF;
             font-family: $fontFamilyText;
             font-size: 14px;
@@ -54,11 +54,11 @@
         &__btn {
             position: absolute;
             z-index: 5;
-            top: 0;
+            top: 40px;
             width: 284px;
             flex-shrink: 0;
             border-radius: 8px;
-            background-color: #E8594E;
+            background: $btnBgColor;
             padding: 33px 80px;
             color: $btnColorText;
             font-family: $fontFamilyButton;
@@ -67,6 +67,12 @@
             font-weight: 400;
             line-height: normal;
             letter-spacing: 2.182px;
+        }
+
+        &__btn:hover {
+            background-color: $btnBgHoverColor;
+            transform: scale(1.2);
+            transition: 0.3s;
         }
 
         &__bottom {
@@ -97,10 +103,11 @@
                     display: flex;
                     position: relative;
                     overflow: hidden;
-                    height: 250px;
+                    height: 300px;
+                    width: 100%;
                     
                     & img {
-                        width: 100%;
+                        //width: 100%;
                         height: 100%;
                     }
                 }
@@ -143,7 +150,7 @@
 	color: $inputColorText;
 	padding-left: 55px;
 	padding-right: 90px;
-    color: #1C2E3D;
+    color: $inputColorText;
     font-family: $fontFamilyInput;
     font-size: 16px;
     font-style: normal;

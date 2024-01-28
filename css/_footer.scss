@@ -29,12 +29,16 @@
             &__list {
 
                 &__item {
-                    color: #959EA6;
+                    color: $linkColorText;
                     font-family: $fontFamilyLink;
                     font-size: 13px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 29px;
+                }
+                & a:hover {
+                    color: $linkHoverColorText;
+                    transition: 0.3s;
                 }
             }
 
@@ -61,7 +65,7 @@
                     border: 1px solid #d9d9d9;
                     border-radius: 8px;
                     padding: 25px 0;
-                    background-color: #73AFBA;
+                    background: $btnBgColor2;
                     color: $btnColorText;
                     text-align: center;
                     font-family: $fontFamilyButton;
@@ -72,6 +76,11 @@
                     letter-spacing: 2.182px;
                     text-transform: uppercase;
                 }
+                & button:hover {
+                background: $btnBgHoverColor2;
+                transform: scale(1.2);
+                transition: 0.3s;
+            }
             }
         }
 

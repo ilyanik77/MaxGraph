@@ -1,7 +1,7 @@
 .menu {
     display: none;
-    background-color: #73AFBA;
-    width: 25%;
+    background: $btnBgColor2;
+    width: 100%;
     padding: 50px;
     position: fixed;
     z-index: 1000;
@@ -9,14 +9,19 @@
 	top: 0;
 
     &__close {
-        position: fixed;
-        right: 0;
-	    top: 0;
+        
     }
 
     &__nav {
         display: flex;
         flex-direction: column;
+        align-items: center;
+
+        &__close {
+            position: absolute;
+            right: 150px;
+	        top: 55px;
+        }
 
         &__list {
             display: flex;
@@ -27,14 +32,18 @@
                 
 
                 & a {
-                    color: #FFF;
-                    font-family: SFProDisplay;
-                    font-size: 11px;
+                    color: $menuColorText;
+                    font-family: $fontFamilyButton;
+                    font-size: 25px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
                     letter-spacing: 2px;
                     text-transform: uppercase;
+                }
+                & a:hover {
+                    color: $menuHoverColorText;
+                    transition: 0.3s;
                 }
             }
 

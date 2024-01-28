@@ -16,25 +16,36 @@
             align-items: center;
             list-style-type: none;
 
+            &__item:hover {
+                transform: scale(1.5);
+            }
+
             &__item:not(:last-child) {
                 margin-right: 50px;
             }
         }
 
         &__logo {
-            color: #FFF;
+            color: $btnColorText;
             text-align: center;
-            font-family: SFProDisplay;
-            font-size: 22px;
+            font-family: $fontFamilyText;
+            font-size: 35px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 600;
             line-height: normal;
-            letter-spacing: 2px;
+            letter-spacing: 5px;
+        }
+        &__logo:hover {
+            transform: scale(1.2);
+            transition: 0.3s;
         }
 
         &__burger {
             padding: 15px;
             background: transparent;
+        }
+        &__burger:hover {
+            transform: scale(1.5);
         }
     }
 }
