@@ -52,3 +52,54 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .become {
+
+        &__content {
+
+            &__title {
+                font-size: 54px;
+                width: 70%;
+            }
+            &__box {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                & img {
+                    width: 100%;        
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .become {
+
+        &__content {
+
+            &__title {
+                // font-size: 54px;
+                width: 80%;
+            }
+
+            
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .become {
+
+        &__content {
+
+            &__title {
+                // font-size: 54px;
+            }
+        }
+    }
+
+}

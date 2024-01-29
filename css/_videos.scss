@@ -89,3 +89,34 @@
 .item3 {
     background: url("../img/video3.jpg");
 }
+
+@media (max-width: 1025px) {
+    .videos {
+
+        &__slider {
+
+            & .swiper-container {
+                width: 750px;
+
+                & .swiper-slide {
+
+                    &-active {
+                        height: 650px;
+                    }
+
+                }
+
+                
+            }
+        }
+    }
+
+}
+
+@media (max-width: 770px) {
+
+}
+
+@media (max-width: 425px) {
+
+}

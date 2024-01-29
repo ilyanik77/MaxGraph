@@ -89,3 +89,24 @@
     }
 
 }
+
+@media (max-width: 1025px) {
+
+    .newsletter {
+
+        &__content {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 50px;
+        }
+    }
+
+}
+
+@media (max-width: 770px) {
+
+}
+
+@media (max-width: 425px) {
+
+}

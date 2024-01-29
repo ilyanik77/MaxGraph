@@ -30,7 +30,8 @@
         }
 
         &__title {
-            width: 50%;
+            width: 45%;
+            min-width: 700px;
             margin-bottom: 40px;
             color: #FFF;
             font-family: $fontFamilyH1;
@@ -41,7 +42,8 @@
         }
 
         &__text {
-            width: 33%;
+            width: 35%;
+            min-width: 550px;
             margin-bottom: 15px;
             color: #FFF;
             font-family: $fontFamilyText;
@@ -79,20 +81,48 @@
             display: flex;
             align-items: flex-end;
             position: relative;
+            
 
             &__form {
-                flex-shrink: 0;
-	            width: 68%;
-	            position: relative;
-	            overflow: hidden;
+	            width: 68% ;
 	            border-top-left-radius: 4px;
 	            height: 120px;
+                position: relative;
+
+                & input {
+                    border: none;
+	                background-color: #fff;
+	                width: 100%;
+	                height: 100%;
+	                color: $inputColorText;
+	                padding-left: 55px;
+	                padding-right: 90px;
+                    color: $inputColorText;
+                    font-family: $fontFamilyInput;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                & button {
+                    width: 18px;
+	                height: 18px;
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+	                background-image: url("../img/search.png");
+	                background-position: center;
+	                background-size: cover;
+	                background-repeat: no-repeat;
+	                transform: translateY(-50%);
+                }
                 
             }
 
             &__slider {
-                
                 width: 32%;
+                min-width: 500px;
                 overflow: hidden;
 	            border-top-left-radius: 8px;
 	            border-top-right-radius: 8px;
@@ -107,7 +137,6 @@
                     width: 100%;
                     
                     & img {
-                        //width: 100%;
                         height: 100%;
                     }
                 }
@@ -142,31 +171,99 @@
     }
 }
 
-.search-form__field {
-	border: none;
-	background-color: #fff;
-	width: 100%;
-	height: 100%;
-	color: $inputColorText;
-	padding-left: 55px;
-	padding-right: 90px;
-    color: $inputColorText;
-    font-family: $fontFamilyInput;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+@media (max-width: 1024px) {
+    .first {
+        
+        &__content {
+
+            &__title {
+                font-size: 70px;
+                width: 55%;
+                min-width: 500px;
+            }
+            &__text {
+                width: 50%;
+            }
+
+            &__bottom {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+
+                &__form {
+                    width: 100%;
+                    margin-top: 50px;
+                    margin-bottom: 25px;
+                }
+
+                &__slider {
+                    width: 400px;
+                    margin-top: 150px;
+                }
+            }
+        }
+    }
 }
 
-.search-form__button {
-	width: 18px;
-	height: 18px;
-	background-image: url("../img/search.png");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: absolute;
-	right: 62px;
-	top: 50%;
-	transform: translateY(-50%);
+
+@media (max-width: 768px) {
+    .first {
+        
+        &__content {
+
+            &__title {
+                font-size: 60px;
+                // width: 55%;
+                min-width: 470px;
+            }
+
+            &__text {
+                // width: 50%;
+                min-width: 470px;
+            }
+
+            &__bottom {
+                // flex-direction: column-reverse;
+                // align-items: flex-start;
+
+                &__form {
+                    
+                    // margin-bottom: 25px;
+                }
+
+                &__slider {
+                    // margin-top: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .first {
+        
+        &__content {
+
+            &__title {
+                font-size: 50px;
+                
+            }
+
+            &__bottom {
+                flex-direction: column;
+                align-items: flex-start;
+
+                &__form {
+                    margin-top: 150px;
+                    margin-bottom: 25px;
+                }
+
+                &__slider {
+        
+                }
+            }
+        }
+    }
+
 }
